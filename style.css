@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+input::placeholder{
+    color: #4a4b4b;
+}
+
+html {
+font-size: 62.5%;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+body{
+    width: 100%;
+}
+
+header{
+    height: 35rem;
+    background:linear-gradient(#bdc5c541, #dfe1e185), url(https://img.freepik.com/free-photo/colorful-wallpaper-background-multicolored-generative-ai_91128-2257.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.theheading{
+    flex-direction: column;
+}
+
+.theheading h1{
+    color: #eaf3f3;
+    font-size: 3rem;
+}
+
+.theheading h1 span{
+    color: #1cff73;
+    font-size: 2rem;
+}
+#search-form{
+    width: 60%;
+    margin:1rem auto ;
+    background-color: #eaf3f3;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+form input{
+    width: 75%;
+    padding: 1rem;
+    background: transparent;
+    font-size: 1.4rem;
+}
+
+form button{
+    width: 24%;
+    font-size: 1.4rem;
+    padding:.7rem 1rem ;
+    background: #244d4d;
+    color: #eaf3f3;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+html{
+    background: #dfe1e1;
+}
+
+section, .bntsee,footer{
+    background: #dfe1e1;
+}
+
+.bntsee{
+    padding: 2rem;
+}
+
+#show-more-btn{
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    background: #244d4d;
+    color: #eaf3f3;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    margin: auto;
+    display: none;
+    cursor: pointer;
+}
+h1{
+    margin-top: 3rem;
+    color: #eaf3f3;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.box{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box .linkbox{
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: linear-gradient(#00000039, #000000b5);
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.box .linkbox a{
+    background: #0f843c;
+    color: #eaf3f3;
+    font-size: 1.4rem;
+    border-radius: .6rem;
+    padding: .7rem 1rem;
+    text-decoration: none;
+}
+
+.box:hover .linkbox{
+    opacity: 1;
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer p span{
+    color: #244d4d;
+}
+
+@media (max-width : 450px){
+    #search-form {
+        width: 90%;
+    }
+}
